@@ -1,0 +1,44 @@
+MRPerf
+======
+Guanying Wang, Ali R. Butt, Prashant Pandey, Karan Gupta
+{wanggy,butta}@cs.vt.edu, {ppandey,guptaka}@us.ibm.com
+2009.6
+
+What's MRPerf
+-------------
+
+MRPerf is a simulation tool to model Map/Reduce application performance on
+large clusters. The current simulation mimics Hadoop, an open-source Map/Reduce
+implementation.
+
+Get Ready to Run MRPerf
+-----------------------
+
+To run simulation, ns-2 must be installed and patched. A patch is available in
+ns.patch/, and it's against ns-2.33. The patch is not tested against other
+versions of ns-2. Since xml configuration files are used in MRPerf, libxml2
+must be available to compile patched ns-2. A copy of libxml headers is included
+in the patch. In the future, it is desirable to specify dependency through
+automake tools. Once ns can be found and run in command line, MRPerf is ready
+to run.
+
+How to Run MRPerf
+-----------------
+
+MRPerf source files are in src/. It's highly recommended to copy the source
+files into a new dir and run simulation there. Run "make topo", "make gen", and
+"make" in turn to run the simulation. The first two commands convert some
+configuration files from .py or .xml to .tcl for ns-2 to read, and "make"
+launches ns-2 on .tcl simulation files.
+
+How configuration files are created, and their relationship is specified in
+conf.files.relationship. Manually modified configuration files are
+metadata_gen1.xml, topology1.xml, hadoop_conf.py, parameters.tcl, and
+hadoop.job.tcl. Some sample configuration files are in exp/.
+
+Disclaimer
+----------
+
+This is a pre-release/preview version of MRPerf. Some part of the code may not
+work as expected. The authors will not provide support or bugfix of the code.
+
