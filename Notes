@@ -1,4 +1,5 @@
 2010.8.2
+
 If OTcl does not compile, it's probably because it does not work with gcc-4.4.
 Try install gcc-4.3 and compile OTcl with gcc-4.3.
 
@@ -9,4 +10,17 @@ related to missing libxml headers or library. Headers are expected to be in
 modify Makefile.in to make it work.
 
 Question: How to apply the ns-patch?
-Answer: TODO
+Answer: ns-2.34 $ patch -p1 < /path/to/patch-ns-2.34
+
+
+2010.8.3
+
+A small patch on ns-2.34/tcp/tcp.cc was done in previous version of MRPerf, I
+remember the reason why the original code will break, but doesn't seem to
+understand what the patch is doing. I'll leave a copy of the patch in ns.patch/
+dir.
+
+Dr. Valetto informed me about a bug on rack groups with different machine
+types. I fixed that on the v0.1 release, but haven't fixed it here. The patch
+I gave him is in ns.patch/ dir.
+
