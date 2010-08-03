@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job xsi:noNamespaceSchemaLocation="job.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<jvm_start_cost>5.0*1000*1000*1000</jvm_start_cost>
+	<map>
+		<cycles_per_byte>20</cycles_per_byte>
+		<sort_cycles_per_byte>50</sort_cycles_per_byte>
+		<merge_cycles>1.0*1000*1000*1000</merge_cycles>
+		<filter_ratio>
+			<uniform>
+				<uniform_min>0.2</uniform_min>
+				<uniform_max>0.3</uniform_max>
+			</uniform>
+		</filter_ratio>
+	</map>
+	<reduce>
+		<merge_cycles>5.0*1000*1000*1000</merge_cycles>
+		<cycles_per_byte>20</cycles_per_byte>
+		<filter_ratio>
+			<uniform>
+				<uniform_min>0.2</uniform_min>
+				<uniform_max>0.3</uniform_max>
+			</uniform>
+		</filter_ratio>
+	</reduce>
+	<average_record_size>10</average_record_size>
+	<job_tracker>n_rg0_0_ng0_1</job_tracker>
+	<name_node>n_rg0_0_ng0_0</name_node>
+	<input_dir>data</input_dir>
+	<output_dir>output</output_dir>
+</job>

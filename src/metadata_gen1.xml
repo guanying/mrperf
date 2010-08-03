@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conf xsi:noNamespaceSchemaLocation="metadata_gen.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<path>/data</path>
+	<number_files>
+		<min_files>1</min_files>
+		<max_files>1</max_files>
+	</number_files>
+	<file_size>
+		<unit_size>67108864</unit_size>
+		<min_unit>10</min_unit>
+		<max_unit>400</max_unit>
+	</file_size>
+	<replication_level>3</replication_level>
+	<gen_method>random</gen_method>
+	<name_node>jt</name_node>
+</conf>

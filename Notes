@@ -1,0 +1,12 @@
+2010.8.2
+If OTcl does not compile, it's probably because it does not work with gcc-4.4.
+Try install gcc-4.3 and compile OTcl with gcc-4.3.
+
+patched ns-2 is dependent on libxml2, both headers and library. It is not
+reflected in configure, and running make with libxml2 will cause some error
+related to missing libxml headers or library. Headers are expected to be in
+/usr/include/libxml2/, if libxml2 headers are installed elsewhere, please
+modify Makefile.in to make it work.
+
+Question: How to apply the ns-patch?
+Answer: TODO

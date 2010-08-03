@@ -1,0 +1,142 @@
+{
+    "in_mem_space": 500.0, 
+    "task_commands": [
+        "64 dcell- 72 1", 
+        "64 tree- 72 1", 
+        "64 star- 72 1", 
+        "64 2rack- 72 1"
+    ], 
+    "config_data": "{\n    \"description\" : \"Job 1\",\n    \"in_mem_space\": 500.0, \n    \"sort_cycles_per_byte\": 500.0\n}", 
+    "no_copiers": "$num_of_nodes", 
+    "description": "Job 1", 
+    "tasks_to_start": 2, 
+    "ext_latency": "0.15ms", 
+    "in_mem_segments": 100, 
+    "reduce_sort_cycles": 6000000000.0, 
+    "cycles_per_byte": 20.0, 
+    "wrap_up_cost": 4800000000.0, 
+    "write_seek": 0, 
+    "int_latency": "0.15ms", 
+    "read_bw_table": {
+        "Seagate": 293601280.0
+    }, 
+    "jvm_start_cost": 4000000000.0, 
+    "buffer_size": 26214400, 
+    "filter_ratio": {
+        "max": 0.01, 
+        "type": "Uniform", 
+        "min": 0
+    }, 
+    "reduce_cycles_per_byte": 90.0, 
+    "reduce_filter_ratio": {
+        "max": 1.0, 
+        "type": "Uniform", 
+        "min": 1.0
+    }, 
+    "max_mappers": 2, 
+    "start_sort_when_buffer": 1, 
+    "freq_table": {
+        "Xeon 2.5Ghz L5420": 2500000000.0, 
+        "Xeon 3.2Ghz": 3435973836.8, 
+        "Xeon 3.0Ghz": 3221225472.0
+    }, 
+    "dist_cache_size": 1048576.0, 
+    "task_type": "normal", 
+    "write_bw_table": {
+        "Seagate": 78643200.0
+    }, 
+    "read_seek": 0, 
+    "heart_beat_delay": 1, 
+    "finish_time": 5000.0, 
+    "max_reducers": 2, 
+    "num_of_reducers": "[expr $max_reducers*$num_of_nodes]", 
+    "merge_cycles": 1000000000.0, 
+    "ext_bw": "1Gb", 
+    "timers": {
+        "data_req": 189, 
+        "ghost_map": 189, 
+        "task_dead": 600, 
+        "alive": 30
+    }, 
+    "topology_file": "t-multi32.xml", 
+    "avg_record_size": 100, 
+    "int_bw": "1Gb", 
+    "nodes": [
+        "bom"
+    ], 
+    "io_factor": 10, 
+    "sort_cycles_per_byte": 500.0
+};;;
+
+
+{
+    "in_mem_space": 300.0, 
+    "task_commands": [
+        "64 dcell- 72 1", 
+        "64 tree- 72 1", 
+        "64 star- 72 1", 
+        "64 2rack- 72 1"
+    ], 
+    "config_data": "\n\n{\n    \"description\" : \"Job 2\",\n    \"in_mem_space\": 300.0, \n    \"sort_cycles_per_byte\": 200.0\n}\n", 
+    "no_copiers": "$num_of_nodes", 
+    "description": "Job 2", 
+    "tasks_to_start": 2, 
+    "ext_latency": "0.15ms", 
+    "in_mem_segments": 100, 
+    "reduce_sort_cycles": 6000000000.0, 
+    "cycles_per_byte": 20.0, 
+    "wrap_up_cost": 4800000000.0, 
+    "write_seek": 0, 
+    "int_latency": "0.15ms", 
+    "read_bw_table": {
+        "Seagate": 293601280.0
+    }, 
+    "jvm_start_cost": 4000000000.0, 
+    "buffer_size": 26214400, 
+    "filter_ratio": {
+        "max": 0.01, 
+        "type": "Uniform", 
+        "min": 0
+    }, 
+    "reduce_cycles_per_byte": 90.0, 
+    "reduce_filter_ratio": {
+        "max": 1.0, 
+        "type": "Uniform", 
+        "min": 1.0
+    }, 
+    "max_mappers": 2, 
+    "start_sort_when_buffer": 1, 
+    "freq_table": {
+        "Xeon 2.5Ghz L5420": 2500000000.0, 
+        "Xeon 3.2Ghz": 3435973836.8, 
+        "Xeon 3.0Ghz": 3221225472.0
+    }, 
+    "dist_cache_size": 1048576.0, 
+    "task_type": "normal", 
+    "write_bw_table": {
+        "Seagate": 78643200.0
+    }, 
+    "read_seek": 0, 
+    "heart_beat_delay": 1, 
+    "finish_time": 5000.0, 
+    "max_reducers": 2, 
+    "num_of_reducers": "[expr $max_reducers*$num_of_nodes]", 
+    "merge_cycles": 1000000000.0, 
+    "ext_bw": "1Gb", 
+    "timers": {
+        "data_req": 189, 
+        "ghost_map": 189, 
+        "task_dead": 600, 
+        "alive": 30
+    }, 
+    "topology_file": "t-multi32.xml", 
+    "avg_record_size": 100, 
+    "int_bw": "1Gb", 
+    "nodes": [
+        "bom"
+    ], 
+    "io_factor": 10, 
+    "sort_cycles_per_byte": 200.0
+};;;
+
+

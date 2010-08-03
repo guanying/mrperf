@@ -1,0 +1,11 @@
+{
+    "description" : "Job 1",
+    "in_mem_space": 500.0, 
+    "sort_cycles_per_byte": 500.0
+};;;
+
+{
+	"in_mem_space" : 300.0,
+	"sort_cycles_per_byte" : 100
+
+}

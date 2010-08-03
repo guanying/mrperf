@@ -1,0 +1,73 @@
+{
+    "min_files": 1, 
+    "merge_cycles": 1000000000.0, 
+    "path": "/data", 
+    "max_unit": 400, 
+    "reduce_filter_ratio": {
+        "max": 1.0, 
+        "type": "Uniform", 
+        "min": 1.0
+    }, 
+    "min_unit": 1, 
+    "jvm_start_cost": 4000000000.0, 
+    "paddedend": "1337", 
+    "replication_level": 3, 
+    "config_data": "{\n    \"description\" : \"Job 1\",\n    \"in_mem_space\": 500.0, \n    \"sort_cycles_per_byte\": 500.0\n}\n", 
+    "freq_table": {
+        "Xeon 2.5GHz L5420": 2500000000.0, 
+        "Xeon 3.2GHz": 3435973836.8000002, 
+        "Xeon 3.0GHz": 3221225472.0
+    }, 
+    "wrap_up_cost": 4800000000.0, 
+    "int_latency": "0.15ms", 
+    "write_bw_table": {
+        "Seagate": 78643200.0
+    }, 
+    "nodes": [
+        "bom"
+    ], 
+    "io_factor": 10, 
+    "tasks_to_start": 2, 
+    "ext_bw": "1Gb", 
+    "write_seek": 0, 
+    "int_bw": "1Gb", 
+    "max_mappers": 2, 
+    "in_mem_space": 500.0, 
+    "read_bw_table": {
+        "Seagate": 293601280.0
+    }, 
+    "in_mem_segments": 100, 
+    "filter_ratio": {
+        "max": 0.01, 
+        "type": "Uniform", 
+        "min": 0
+    }, 
+    "ext_latency": "0.15ms", 
+    "task_type": "normal", 
+    "max_files": 1, 
+    "max_reducers": 1, 
+    "unit_size": 67108864, 
+    "no_copiers": "$::num_of_nodes", 
+    "name_node": "jt", 
+    "sched": "[new MRPerf/Scheduler/FairShare]", 
+    "description": "Job 1", 
+    "read_seek": 0, 
+    "reduce_sort_cycles": 6000000000.0, 
+    "put": "sched constructed", 
+    "buffer_size": 52428800, 
+    "cycles_per_byte": 20.0, 
+    "heart_beat_delay": 1, 
+    "finish_time": 5000.0, 
+    "timers": {
+        "data_req": 189, 
+        "ghost_map": 189, 
+        "task_dead": 600, 
+        "alive": 30
+    }, 
+    "topology_file": "topology1.xml", 
+    "gen_method": "random", 
+    "sort_cycles_per_byte": 500.0, 
+    "reduce_cycles_per_byte": 90.0
+};;;
+
+
